@@ -13,9 +13,9 @@ public class CategoriaComodo {
     private String descricaoComodo;
     private Double potenciaMetroQuad;
     
-    public CategoriaComodo(String descricaoComodo, Double potenciaMetroQuad){
-        this.setDescricaoComodo(descricaoComodo);
-        this.setPotenciaMetroQuad(potenciaMetroQuad);
+    public CategoriaComodo(String descricaoComodo_, Double potenciaMetroQuad_){
+        this.setDescricaoComodo(descricaoComodo_);
+        this.setPotenciaMetroQuad(potenciaMetroQuad_);
     }
     
     /**
@@ -48,5 +48,7 @@ public class CategoriaComodo {
             this.potenciaMetroQuad = potenciaMetroQuad;
     }
     
-    
+    public String toString() {
+       return this.getDescricaoComodo() + " - " + String.valueOf(this.getPotenciaMetroQuad()); 
+    }
 }

@@ -13,8 +13,8 @@ public class EdificacaoResidencial extends Edificacao{
     private String tipoImovel; //Apartamento / Casa / Sobrado
     private int numMoradores;
     
-    public EdificacaoResidencial(String endereco, String numeroEndereco ,String nomeResponsavel, String tipoImovel, int numMoradores){
-        super(endereco, numeroEndereco);
+    public EdificacaoResidencial(String endereco, String nomeResponsavel, String tipoImovel, int numMoradores){
+        super(endereco);
         this.setNomeResponsavel(nomeResponsavel);
         this.setTipoImovel(tipoImovel);
         this.setNumMoradores(numMoradores);        
