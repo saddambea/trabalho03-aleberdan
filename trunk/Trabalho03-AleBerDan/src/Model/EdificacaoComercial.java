@@ -12,8 +12,8 @@ public class EdificacaoComercial extends Edificacao{
     private String nomeEmpresa;
     private String ramoAtuacao;
     
-    public EdificacaoComercial(String endereco, String numeroEndereco, String nomeEmpresa, String ramoAtuacao){
-        super(endereco, numeroEndereco);
+    public EdificacaoComercial(String endereco, String nomeEmpresa, String ramoAtuacao){
+        super(endereco);
         this.setNomeEmpresa(nomeEmpresa);
         this.setRamoAtuacao(ramoAtuacao);
     }

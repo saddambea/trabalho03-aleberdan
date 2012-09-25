@@ -11,8 +11,7 @@ package Model;
 public class Comodo extends CategoriaComodo{
     private double largura;
     private double comprimento;
-    
-    
+        
     public Comodo(String descricaoComodo, Double potenciaMetroQuad, double largura, double comprimento){
         super(descricaoComodo, potenciaMetroQuad);
         this.setLargura(largura);
