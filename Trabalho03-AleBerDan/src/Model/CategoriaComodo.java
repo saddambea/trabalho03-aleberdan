@@ -12,7 +12,12 @@ public class CategoriaComodo {
     
     private String descricaoComodo;
     private Double potenciaMetroQuad;
-
+    
+    public CategoriaComodo(String descricaoComodo, Double potenciaMetroQuad){
+        this.setDescricaoComodo(descricaoComodo);
+        this.setPotenciaMetroQuad(potenciaMetroQuad);
+    }
+    
     /**
      * @return the descricaoComodo
      */
@@ -24,7 +29,8 @@ public class CategoriaComodo {
      * @param descricaoComodo the descricaoComodo to set
      */
     public void setDescricaoComodo(String descricaoComodo) {
-        this.descricaoComodo = descricaoComodo;
+        if(!descricaoComodo.isEmpty())
+            this.descricaoComodo = descricaoComodo;
     }
 
     /**
@@ -38,7 +44,8 @@ public class CategoriaComodo {
      * @param potenciaMetroQuad the potenciaMetroQuad to set
      */
     public void setPotenciaMetroQuad(Double potenciaMetroQuad) {
-        this.potenciaMetroQuad = potenciaMetroQuad;
+        if(potenciaMetroQuad > 0.0)
+            this.potenciaMetroQuad = potenciaMetroQuad;
     }
     
     
